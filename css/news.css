@@ -18,11 +18,15 @@ nav {
   color: #fff;
   padding: 0.5em;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 nav a {
   color: #fff;
   margin: 0 1em;
   text-decoration: none;
+  display: block;
 }
 .container {
   padding: 2em;
@@ -38,4 +42,9 @@ nav a {
 .section h2 {
   border-bottom: 2px solid #333;
   padding-bottom: 0.5em;
+}
+@media (max-width: 500px) {
+  nav a {
+      line-height: 30px;
+  }
 }
