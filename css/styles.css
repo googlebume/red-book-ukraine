@@ -5,7 +5,8 @@ body {
     padding: 0;
 }
 
-header, footer {
+header,
+footer {
     background: #333;
     color: #fff;
     padding: 1em 0;
