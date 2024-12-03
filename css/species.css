@@ -1,56 +1,86 @@
- body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-    background: url('./../images/species.jfif') no-repeat center center fixed;
-    background-size: cover;
-        }
-        header, footer {
-        background: rgba(51, 51, 51, 0.8);
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
-        }
-        nav {
-   background: rgba(68, 68, 68, 0.8);
-    color: #fff;
-    padding: 0.5em;
-    text-align: center;
-        }
-        nav a {
-            color: #fff;
-    margin: 0 1em;
-    text-decoration: none;
-        }
-        .container {
-            padding: 2em;
-padding: 2em;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-        }
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: url("./../images/species.jfif") no-repeat center center fixed;
+  background-size: cover;
+}
+header,
+footer {
+  background: rgba(51, 51, 51, 0.8);
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+footer {
+  padding: -2em -2em 0 -2em;
+  margin: 2em -2em 0 -2em;
+}
+nav {
+  background: rgba(68, 68, 68, 0.8);
+  color: #fff;
+  padding: 0.5em;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  margin: 0 1em;
+  text-decoration: none;
+}
+.container {
+  min-height: 90vh;
+  padding: 2em;
+  padding: 2em 2em 0 2em;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
 
 .section {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 .section h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 0.5em;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5em;
 }
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 колонки однакової ширини */
-    gap: 10px;
-    padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 колонки однакової ширини */
+  gap: 10px;
+  padding: 10px;
 }
 
 .grid-item {
-    text-align: center;
+  text-align: center;
 }
 
 .grid-item img {
-    height: 200px; /* Встановлюємо фіксовану висоту */
-    width: 100%; /* Ширина заповнює контейнер */
-    object-fit: cover; /* Зображення обрізається, щоб заповнити контейнер */
+  height: 300px;
+  width: 100%; /* Ширина заповнює контейнер */
+  object-fit: cover; /* Зображення обрізається, щоб заповнити контейнер */
+  object-position: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 1300px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 4 колонки однакової ширини */
+  }
+}
+@media (max-width: 777px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr); /* 4 колонки однакової ширини */
+  }
+}
+@media (max-width: 572px) {
+  .container {
+    padding: 2em 12px 0 12px;
+  }
 }
