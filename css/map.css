@@ -21,12 +21,16 @@
      color: #fff;
      padding: 0.5em;
      text-align: center;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
  }
 
  nav a {
      color: #fff;
      margin: 0 1em;
      text-decoration: none;
+     display: block;
  }
 
  .container {
@@ -50,4 +54,14 @@
  .map-container img {
      display: block;
      margin: 0 auto;
+     max-width: 100%;
+     height: auto;
+ }
+ @media (max-width: 500px) {
+    .container {
+        padding: 12px;
+    }
+    nav a {
+        line-height: 30px;
+    }
  }
