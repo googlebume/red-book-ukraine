@@ -45,7 +45,7 @@ nav a {
   height: 200px; /* встановіть бажану висоту */
   object-fit: cover; /* зберігає пропорції зображення */
   object-position: center;
-  margin: 10px;
+  margin: 5px;
 }
 .video {
   iframe {
