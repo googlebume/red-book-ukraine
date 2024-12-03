@@ -20,12 +20,16 @@
    color: #fff;
    padding: 0.5em;
    text-align: center;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
  }
 
  nav a {
    color: #fff;
    margin: 0 1em;
    text-decoration: none;
+   display: block;
  }
 
  .container {
@@ -89,3 +93,8 @@
  th {
    background-color: #f9f9f9;
  }
+ @media (max-width: 500px) {
+  nav a {
+      line-height: 30px;
+  }
+}
