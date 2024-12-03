@@ -22,11 +22,15 @@ nav {
   color: #fff;
   padding: 0.5em;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 nav a {
   color: #fff;
   margin: 0 1em;
   text-decoration: none;
+  display: block;
 }
 .container {
   min-height: 90vh;
@@ -82,5 +86,13 @@ nav a {
 @media (max-width: 572px) {
   .container {
     padding: 2em 12px 0 12px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+      padding: 12px;
+  }
+  nav a {
+      line-height: 30px;
   }
 }
