@@ -50,6 +50,18 @@ nav a {
   padding-bottom: 0.5em;
 }
 
+.container__picture {
+  text-align: center;
+}
+.picture__img {
+  max-width: 60%;
+}
+.picture__img:nth-of-type(1){
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
 @media (max-width: 560px) {
   .container{
     width: 95%;
@@ -62,5 +74,15 @@ nav a {
   }
   nav a {
       line-height: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .picture__img {
+    max-width: 80%;
+  }
+}
+@media (max-width: 560px) {
+  .picture__img {
+    max-width: 100%;
   }
 }
