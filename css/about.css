@@ -3,7 +3,7 @@
      line-height: 1.6;
      margin: 0;
      padding: 0;
-     background: url('./../images/about.jfif') no-repeat center center fixed;
+     background: url('https://wodnesprawy.pl/wp-content/uploads/2024/09/Wodne-Sprawy_-Norka-amerykanska.jpg') no-repeat center center fixed;
      background-size: cover;
  }
 
@@ -34,9 +34,10 @@
 
  .container {
      padding: 2em;
-     padding: 2em;
      background: rgba(255, 255, 255, 0.8);
      border-radius: 10px;
+     width: 80%;
+     margin: 0 auto;
  }
 
  .section {
@@ -47,6 +48,13 @@
      border-bottom: 2px solid #333;
      padding-bottom: 0.5em;
  }
+
+ .container__picture {
+    text-align: center;
+  }
+  .picture__img {
+    max-width: 60%;
+  }
  @media (max-width: 500px) {
     nav a {
         line-height: 30px;
@@ -55,3 +63,18 @@
         padding: 12px;
     }
  }
+ @media (max-width: 560px) {
+    .container{
+      width: 95%;
+      padding: 12px;
+    }
+    .picture__img {
+        max-width: 100%;
+      }
+  }
+
+  @media (max-width: 1200px) {
+    .picture__img {
+      max-width: 80%;
+    }
+  }
